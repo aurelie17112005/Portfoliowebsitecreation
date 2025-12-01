@@ -11,8 +11,8 @@ export function Projects() {
       solution: 'Implémentation d\'un système de cache local avec synchronisation différée et validation côté serveur',
       role: 'Développement fullstack complet : architecture, API REST, interface utilisateur',
       evolution: 'Ajout de la géolocalisation et d\'un tableau de bord analytique avancé',
-      github: '#',
-      demo: '#'
+      github: 'https://github.com/aurelie17112005/EDT---Alt',
+      demo: 'https://portfolio-ad-aurelie.vercel.app/'
     },
     {
       title: 'Application événementielle',
@@ -23,7 +23,7 @@ export function Projects() {
       solution: 'Mise en place du clustering et du lazy loading avec rechargement dynamique par zone',
       role: 'Lead développement frontend et intégration de la carte interactive',
       evolution: 'Système de réservation de stands et messagerie en temps réel',
-      github: '#',
+      github: 'https://github.com/AlexandreVILLANI/SaeTourisme',
       demo: '#'
     },
     {
@@ -63,7 +63,9 @@ export function Projects() {
     }
   ];
 
-  return (
+  // @ts-ignore
+    // @ts-ignore
+    return (
     <div className="py-20 px-6 bg-[#F5F1EC]">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
