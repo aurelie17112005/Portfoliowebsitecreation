@@ -46,7 +46,7 @@ export function Hero() {
                         {/* Badge disponibilité */}
                         <div className="inline-block mb-4 px-4 py-2 bg-white rounded-full shadow-sm">
               <span className="text-[#7A5C50] text-sm">
-                Disponible en alternance – Développement web
+                Apprentie chez 2KINGS SAS – Développement web
               </span>
                         </div>
 

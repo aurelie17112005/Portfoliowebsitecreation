@@ -39,7 +39,7 @@ export function About() {
                                 <h3>Profil</h3>
                             </div>
                             <p className="text-white/90 leading-relaxed">
-                                Développeuse web backend en alternance chez KINGS SAS et étudiante
+                                Développeuse web backend en alternance chez 2KINGS SAS et étudiante
                                 en Bachelor Informatique à l’IUT Nord Franche-Comté, je conçois des
                                 applications web fullstack : APIs REST, bases de données SQL,
                                 interfaces responsives et automatisations métier. Curieuse et

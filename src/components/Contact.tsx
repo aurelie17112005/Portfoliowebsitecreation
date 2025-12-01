@@ -48,7 +48,7 @@ export function Contact() {
     {
       icon: MapPin,
       label: 'Localisation',
-      value: 'Île-de-France, France',
+      value: 'Belfort, France',
       link: null
     }
   ];
@@ -106,8 +106,7 @@ export function Contact() {
 
               <div className="mt-8 pt-8 border-t border-white/20">
                 <p className="text-white/80 text-sm leading-relaxed">
-                  Actuellement en recherche d'opportunités en alternance pour continuer 
-                  à développer mes compétences en développement fullstack.
+                  Actuellement en alternance dans la société 2KINGS SAS en tant que développeuse Web.
                 </p>
               </div>
             </div>
