@@ -26,41 +26,27 @@ export function Projects() {
       github: 'https://github.com/AlexandreVILLANI/SaeTourisme',
       demo: '#'
     },
-    {
-      title: 'Hackathon Informatique - 3ᵉ place',
-      description: 'Conception d\'une solution innovante en 48h pour optimiser la gestion des ressources dans les espaces de coworking, avec réservation automatisée et analytics.',
-      technologies: ['Python', 'JavaScript', 'API REST', 'Data Visualization'],
-      image: 'https://images.unsplash.com/photo-1638029202288-451a89e0d55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYWNrYXRob24lMjBjb2Rpbmd8ZW58MXx8fHwxNzY0NDM1MzEwfDA&ixlib=rb-4.1.0&q=80&w=1080',
-      challenge: 'Livrer un MVP fonctionnel et démonstrable en moins de 48h avec une équipe nouvellement formée',
-      solution: 'Architecture modulaire, répartition claire des tâches et utilisation de bibliothèques éprouvées',
-      role: 'Coordination technique et développement de l\'API backend',
-      evolution: 'Poursuite du projet avec intégration IoT pour la détection automatique d\'occupation',
-      github: '#',
-      demo: '#',
-      award: true
-    },
-    {
-      title: 'Système de modélisation SQL',
-      description: 'Outil de conception et visualisation de bases de données relationnelles avec génération automatique de scripts SQL et documentation.',
-      technologies: ['Java', 'PostgreSQL', 'SQL', 'Architecture MVC'],
-      image: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=600&h=400&fit=crop',
-      challenge: 'Traduire graphiquement des modèles complexes tout en garantissant la cohérence des relations',
-      solution: 'Algorithme de validation des contraintes et système de suggestions intelligentes',
-      role: 'Développement de la logique métier et du moteur de génération SQL',
-      evolution: 'Import/export depuis schémas existants et suggestion d\'optimisations',
-      github: '#'
-    },
-    {
-      title: 'Automatisation de rapports PDF',
-      description: 'Module de génération automatique de rapports personnalisés à partir de données métier, avec templates configurables et export multi-format.',
-      technologies: ['Node.js', 'PDF-lib', 'PostgreSQL', 'Cron Jobs'],
-      image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&h=400&fit=crop',
-      challenge: 'Générer des PDF complexes avec graphiques et mise en page dynamique',
-      solution: 'Utilisation de templates modulaires et pré-compilation des assets statiques',
-      role: 'Conception et développement du moteur de génération',
-      evolution: 'Éditeur visuel de templates et planification intelligente',
-      github: '#'
-    }
+
+      {
+          title: 'Projet personnel : Application de suivi des Talents Nigériens',
+          description:
+              'Plateforme web complète permettant le suivi académique et administratif des étudiants Nigériens, avec gestion centralisée des données, suivi des résultats et tableau de bord pour enseignants et administrateurs. L’application propose une interface claire, intuitive et responsive adaptée aux différents rôles : étudiants, responsables pédagogiques et direction.',
+
+          technologies: ['TypeScript', 'HTML/CSS', 'JavaScript'],
+
+          image: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=600&h=400&fit=crop',
+
+          solution:
+              'Création d’un système unifié permettant de suivre les profils étudiants, consulter les notes, gérer les cours et visualiser des statistiques en temps réel. La plateforme répond au besoin de digitalisation des établissements d’enseignement au Niger, en automatisant les processus manuels et en réduisant les risques d’erreurs.',
+
+          role:
+              'Développement de la logique métier, conception de la structure de données et implémentation du moteur de génération SQL. Participation à la mise en place du routage, des vues principales et de l’architecture globale du projet.',
+
+          evolution:
+              'Ajout d’un module d’import/export depuis des schémas existants, suggestions d’optimisations automatiques des parcours étudiants, ajout d’un espace parent et intégration future de statistiques avancées avec visualisations interactives.',
+
+          demo: 'https://plateformesuivitudiantsniger.vercel.app/'
+      },
   ];
 
   // @ts-ignore
