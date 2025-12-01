@@ -34,7 +34,7 @@ export function Projects() {
 
           technologies: ['TypeScript', 'HTML/CSS', 'JavaScript'],
 
-          image: 'https://fr.images.search.yahoo.com/images/view;_ylt=AwrNP9HZ4C1pMLEPFVllAQx.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzNlY2RkOTBlZjY1Y2Y5NWY5YjBhZGJlNTM0MDQ0YmZlBGdwb3MDMTMEaXQDYmluZw--?back=https%3A%2F%2Ffr.images.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Ddrapeau%2Bniger%26type%3DE210FR91082G0%26fr%3Dmcafee%26fr2%3Dpiv-web%26tab%3Dorganic%26ri%3D13&w=1280&h=960&imgurl=node01.flagstat.net%2Fmedia%2Fimage%2F1907r.jpg&rurl=https%3A%2F%2Fwww.monsieur-des-drapeaux.com%2Fniger.html&size=230KB&p=drapeau+niger&oid=3ecdd90ef65cf95f9b0adbe534044bfe&fr2=piv-web&fr=mcafee&tt=Acheter+drapeau+Niger+-+16+tailles+disponibles+-+Monsieur-des-Drapeaux&b=0&ni=21&no=13&ts=&tab=organic&sigr=Ikha6VxV.2eM&sigb=C8DIU9xUrfdc&sigi=tQ.H2ZTifu88&sigt=2fAGbPBeZMXt&.crumb=m6bDdBkAmfK&fr=mcafee&fr2=piv-web&type=E210FR91082G0',
+          image: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=600&h=400&fit=crop',
 
           solution:
               'Création d’un système unifié permettant de suivre les profils étudiants, consulter les notes, gérer les cours et visualiser des statistiques en temps réel. La plateforme répond au besoin de digitalisation des établissements d’enseignement au Niger, en automatisant les processus manuels et en réduisant les risques d’erreurs.',
