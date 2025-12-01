@@ -4,9 +4,9 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/aurelie-azonnoudo', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:aurelie.azonnoudo@email.com', label: 'Email' }
+    { icon: Github, href: 'https://github.com/aurelie17112005', label: 'GitHub' },
+    { icon: Linkedin, href: 'www.linkedin.com/in/dènadi-aurélie-azonnoudo-07625b2a1', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:denadiaurelie@gmail.com', label: 'Email' }
   ];
 
   return (
