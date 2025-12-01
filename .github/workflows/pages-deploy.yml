@@ -1,0 +1,83 @@
+# GitHub Pages Deployment Workflow
+#
+# This workflow builds the project and deploys the output to GitHub Pages.
+# It uses actions/upload-pages-artifact@v1 (preferred) to upload the build directory.
+#
+# BUILD OUTPUT PATH:
+# By default, this workflow uses ./dist as the build output path.
+# If your project uses a different build directory (e.g., ./build, ./out),
+# update the 'path' parameter in the "Upload pages artifact" step below.
+# For Vite projects, check the 'outDir' setting in vite.config.ts.
+# For Create React App, the default output is ./build.
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+        # This produces static files in the configured output directory
+
+      # ------------------------------------------------------------------
+      # PREFERRED: Upload using actions/upload-pages-artifact@v1
+      # This action automatically sets the required artifact name for Pages.
+      # Update 'path' below if your build output is in a different directory.
+      # Common paths: ./dist (Vite default), ./build (CRA), ./out (Next.js export)
+      # ------------------------------------------------------------------
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Change this path if your project outputs to a different directory
+          path: ./dist
+
+      # ------------------------------------------------------------------
+      # ALTERNATIVE: Upload using actions/upload-artifact@v4
+      # Uncomment the block below and comment out the block above if you
+      # prefer to use upload-artifact@v4 directly. The artifact MUST be
+      # named 'github-pages' for the deploy-pages action to find it.
+      # ------------------------------------------------------------------
+      # - name: Upload pages artifact (alternative using upload-artifact@v4)
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: github-pages
+      #     path: ./dist
+      #     # Change the path above if your project outputs to a different directory
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
