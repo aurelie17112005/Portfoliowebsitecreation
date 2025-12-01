@@ -31,19 +31,19 @@ export function Contact() {
       icon: Mail,
       label: 'Email',
       value: 'aurelie.azonnoudo@email.com',
-      link: 'mailto:aurelie.azonnoudo@email.com'
+      link: 'mailto:denadiaurelie@gmail.com'
     },
     {
       icon: Phone,
       label: 'Téléphone',
       value: '+33 6 XX XX XX XX',
-      link: 'tel:+33600000000'
+      link: ''
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
       value: 'Aurélie AZONNOUDO',
-      link: 'https://linkedin.com/in/aurelie-azonnoudo'
+      link: 'www.linkedin.com/in/dènadi-aurélie-azonnoudo-07625b2a1'
     },
     {
       icon: MapPin,
