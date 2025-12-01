@@ -5,7 +5,7 @@ export function Footer() {
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/aurelie17112005', label: 'GitHub' },
-    { icon: Linkedin, href: 'www.linkedin.com/in/dènadi-aurélie-azonnoudo-07625b2a1', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/dènadi-aurélie-azonnoudo-07625b2a1', label: 'LinkedIn' },
     { icon: Mail, href: 'mailto:denadiaurelie@gmail.com', label: 'Email' }
   ];
 

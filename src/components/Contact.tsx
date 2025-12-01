@@ -43,7 +43,7 @@ export function Contact() {
       icon: Linkedin,
       label: 'LinkedIn',
       value: 'Aurélie AZONNOUDO',
-      link: 'www.linkedin.com/in/dènadi-aurélie-azonnoudo-07625b2a1'
+      link: 'https://www.linkedin.com/in/dènadi-aurélie-azonnoudo-07625b2a1'
     },
     {
       icon: MapPin,
