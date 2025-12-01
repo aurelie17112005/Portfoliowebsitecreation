@@ -29,7 +29,6 @@ export function Projects() {
             solution:
                 'Mise en place du clustering et du lazy loading avec rechargement dynamique par zone.',
             github: 'https://github.com/AlexandreVILLANI/SaeTourisme',
-            demo: '#'
         },
         {
             title: 'Application de suivi des Talents Nigériens',
