@@ -1,49 +1,46 @@
-name: Deploy TypeScript site to GitHub Pages
+name: Build and deploy to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+    branches:
+      - main
 
 jobs:
-  build:
+  pages:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Use Node.js 18
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: '18'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build
+      - name: Build site
         run: npm run build
+        # ensure this produces your static files in e.g. ./dist or ./build
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      # Preferred: upload with the Pages helper (it sets the required artifact name)
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          path: ./build
+          path: ./dist
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
+      # Alternative (explicit name) — uncomment and use if you prefer upload-artifact
+      # - name: Upload pages artifact (alternative)
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: github-pages
+      #     path: ./dist
+
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
